@@ -8,6 +8,7 @@
 <%@ taglib prefix="theme" tagdir="/WEB-INF/tags/shared/theme" %>
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags" %>
 
+
 <div class="item_container_holder">
 	<div class="title_holder">
 		<h2>
