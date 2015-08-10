@@ -1,0 +1,12 @@
+#Thu, 11 Dec 2014 17:38:10 +0100
+#Ant properties
+#Thu Dec 11 17:38:10 CET 2014
+builddate=20141211 1738
+description=traininginitialdata
+name=traininginitialdata
+vendor=hybris
+version=5.0.3.6
+version.api=5.0.3
+
+revision=-1
+svnurl=${svn.info.traininginitialdata.url}

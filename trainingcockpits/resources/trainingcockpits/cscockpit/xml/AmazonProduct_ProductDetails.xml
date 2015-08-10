@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list-view>
+	<group name="General">
+		<custom class="de.hybris.platform.cscockpit.services.config.impl.ProductThumbnailColumn" name="Thumbnail" visible="true">
+			<label key="config.general.thumbnail" />
+		</custom>
+		<group name="Genders">
+			<label key="trainingcockpits.Amazon.pendrive" />
+			<property qualifier="AmazonProduct.pendrive" visible="true"/>
+		</group>
+	</group>
+</list-view>
