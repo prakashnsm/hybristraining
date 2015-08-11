@@ -115,15 +115,16 @@ public class DefaultCustomerFacade implements CustomerFacade
 		Assert.hasText(registerData.getLogin(), "The field [Login] cannot be empty");
 
 		final CustomerModel newCustomer = getModelService().create(CustomerModel.class);
-		final AddressModel address = getModelService().create(AddressModel.class);
+		//final AddressModel address = getModelService().create(AddressModel.class);
 		newCustomer.setName(getCustomerNameStrategy().getName(registerData.getFirstName(), registerData.getLastName()));
+		newCustomer.setMaritalStatus(registerData.getMaritalStatus());
 		final TitleModel title = getUserService().getTitleForCode(registerData.getTitleCode());
 		newCustomer.setTitle(title);
 		setUidForRegister(registerData, newCustomer);
 		newCustomer.setSessionLanguage(getCommonI18NService().getCurrentLanguage());
 		newCustomer.setSessionCurrency(getCommonI18NService().getCurrentCurrency());
-		address.setMaritalStatus(registerData.getMaritalStatus());
-		getModelService().save(address);
+		//address.setMaritalStatus(registerData.getMaritalStatus());
+		//getModelService().save(address);
 		getCustomerAccountService().register(newCustomer, registerData.getPassword());
 	}
 
