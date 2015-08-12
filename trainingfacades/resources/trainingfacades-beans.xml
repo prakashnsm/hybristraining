@@ -25,4 +25,10 @@
 		<property name="maritalStatus" type="String" />
 	</bean>
 	
+		<bean class="de.hybris.platform.commercefacades.user.data.CustomerData">
+		<property name="maritalStatus" type="String" />
+	</bean>
+	
+	
+	
 </beans>

@@ -214,4 +214,13 @@
 		<property name="orderFacade"  ref="orderFacade"/>
 	</bean>
 
+	<alias name="defaultCustomerPopulator" alias="customerPopulator"/>
+	<bean id="defaultCustomerPopulator"
+		  class=" org.training.facades.populators.CustomerPopulator" >
+		<property name="addressConverter" ref="addressConverter"/>
+		<property name="currencyConverter" ref="currencyConverter"/>
+		<property name="languageConverter" ref="languageConverter"/>
+		<property name="customerNameStrategy" ref="customerNameStrategy"/>
+	</bean>
+
 </beans>
