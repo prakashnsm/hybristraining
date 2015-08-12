@@ -44,6 +44,10 @@
 						<td>${fn:escapeXml(customerData.displayUid)}</td>
 					</tr>
 					<tr>
+						<td><spring:theme code="profile.maritalStatus" text="Marital Status"/>: </td>
+						<td>${fn:escapeXml(customerData.maritalStatus)}</td>
+					</tr>
+					<tr>
 						<td>
 						</td>
 						<td>
