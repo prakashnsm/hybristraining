@@ -189,9 +189,9 @@
 
 	<bean id="genderData" class="org.training.facades.product.data.GenderData" scope="prototype"/>
 	
-	<alias name="defaultCustomerFacade" alias="customerFacade"/>
-	<bean id="defaultCustomerFacade" class="org.training.facades.customer.impl.DefaultCustomerFacade"
-		  >
+	
+<!-- 	<alias name="defaultCustomerFacade" alias="customerFacade"/>
+	<bean id="defaultCustomerFacade" class="org.training.facades.customer.impl.DefaultCustomerFacade">
 		<property name="userService" ref="userService"/>
 		<property name="customerAccountService" ref="customerAccountService"/>
 		<property name="commonI18NService" ref="commonI18NService"/>
@@ -213,14 +213,6 @@
 		<property name="passwordEncoderService" ref="passwordEncoderService"/>
 		<property name="orderFacade"  ref="orderFacade"/>
 	</bean>
-
-	<alias name="defaultCustomerPopulator" alias="customerPopulator"/>
-	<bean id="defaultCustomerPopulator"
-		  class=" org.training.facades.populators.CustomerPopulator" >
-		<property name="addressConverter" ref="addressConverter"/>
-		<property name="currencyConverter" ref="currencyConverter"/>
-		<property name="languageConverter" ref="languageConverter"/>
-		<property name="customerNameStrategy" ref="customerNameStrategy"/>
-	</bean>
+-->	
 
 </beans>

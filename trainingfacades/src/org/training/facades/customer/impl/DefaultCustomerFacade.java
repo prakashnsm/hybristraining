@@ -117,7 +117,6 @@ public class DefaultCustomerFacade implements CustomerFacade
 		final CustomerModel newCustomer = getModelService().create(CustomerModel.class);
 		//final AddressModel address = getModelService().create(AddressModel.class);
 		newCustomer.setName(getCustomerNameStrategy().getName(registerData.getFirstName(), registerData.getLastName()));
-		newCustomer.setMaritalStatus(registerData.getMaritalStatus());
 		final TitleModel title = getUserService().getTitleForCode(registerData.getTitleCode());
 		newCustomer.setTitle(title);
 		setUidForRegister(registerData, newCustomer);
