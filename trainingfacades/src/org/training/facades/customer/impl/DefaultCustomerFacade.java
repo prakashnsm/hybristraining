@@ -122,7 +122,7 @@ public class DefaultCustomerFacade implements CustomerFacade
 		setUidForRegister(registerData, newCustomer);
 		newCustomer.setSessionLanguage(getCommonI18NService().getCurrentLanguage());
 		newCustomer.setSessionCurrency(getCommonI18NService().getCurrentCurrency());
-		//address.setMaritalStatus(registerData.getMaritalStatus());
+		newCustomer.setMaritalStatus(registerData.getMaritalStatus());
 		//getModelService().save(address);
 		getCustomerAccountService().register(newCustomer, registerData.getPassword());
 	}
